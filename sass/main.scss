@@ -1,175 +1,169 @@
-                                     *,
-                                     *::after,
-                                     *::before {
-                                         margin: 0;
-                                         padding: 0;
-                                         box-sizing: inherit;
-                                     }
-                                     
-                                     html,
-                                     body {
-                                         font-family: 'Montserrat', sans-serif;
-                                         height: 100%;
-                                         margin: 0;
-                                         padding: 0;
-                                     }
-                                     
-                                     .header {
-                                         width: 100%;
-                                         display: flex;
-                                         justify-content: center;
-                                         &__logo {
-                                             height: 30px;
-                                             padding: 1rem;
-                                         }
-                                         &__search {
-                                             width: 100%;
-                                             text-decoration: none;
-                                             font-size: 1.3rem;
-                                             background-color: rgb(175, 175, 224);
-                                             &--icon {
-                                                 padding: 1rem;
-                                             }
-                                             &--input {
-                                                 padding: 1rem;
-                                                 .textbox {
-                                                     border: 1px solid rgb(175, 175, 224);
-                                                     outline: 0;
-                                                     background-color: rgb(175, 175, 224);
-                                                     font-size: 16px;
-                                                     padding: 3px 6px 3px 6px;
-                                                 }
-                                             }
-                                         }
-                                     }
-                                     
-                                     .foot {
-                                         width: 100%;
-                                         display: flex;
-                                         flex-wrap: wrap;
-                                         justify-content: center;
-                                         text-align: center;
-                                         &--heading {
-                                             padding: 1.5rem;
-                                             width: 65%;
-                                             font-size: 28px;
-                                             font-weight: bold;
-                                             height: auto;
-                                             color: black;
-                                             display: flex;
-                                             text-justify: auto;
-                                             padding: 1.5rem 1.5rem 0 1.5rem;
-                                         }
-                                         &--title {
-                                             width: 90%;
-                                             font-size: 24px;
-                                             padding: 1.5rem;
-                                             color: rgb(207, 202, 202);
-                                         }
-                                         &--text {
-                                             width: 60%;
-                                             padding: 1.5rem;
-                                             font-size: 22px;
-                                             color: white;
-                                             background-color: rgb(175, 175, 224);
-                                             border-radius: 30px;
-                                             -webkit-border-radius: 30px;
-                                             -moz-border-radius: 30px;
-                                             -ms-border-radius: 30px;
-                                             -o-border-radius: 30px;
-                                         }
-                                     }
-                                     
-                                     .filtre {
-                                         line-height: 4px;
-                                         font-size: 1.3em;
-                                         font-weight: bolder;
-                                         padding: 1.5rem;
-                                     }
-                                     
-                                     .p0Nav-animaux {
-                                         //  min-width: 178px;
-                                         width: 100%;
-                                         height: auto;
-                                         display: flex;
-                                         flex-wrap: nowrap;
-                                         font-size: 1rem;
-                                         font-weight: bolder;
-                                         align-content: center;
-                                         margin: auto 0.8rem;
-                                     }
-                                     
-                                     .fonction {
-                                         width: 100%;
-                                         height: auto;
-                                         display: flex;
-                                         flex-wrap: wrap;
-                                         justify-content: center;
-                                         &__card {
-                                             width: 80%;
-                                             height: 38px;
-                                             display: table;
-                                             text-align: center;
-                                             border-radius: 30px 30px 30px 30px;
-                                             display: flex;
-                                             flex-wrap: nowrap;
-                                             justify-content: auto;
-                                             border: 3px solid #F2F2F2;
-                                             margin-top: 20px;
-                                         }
-                                     }
-                                     
-                                     .moncercle {
-                                         margin: 8px 15px 0px -12px;
-                                         background: #876499;
-                                         justify-content: center;
-                                         width: 25px;
-                                         height: 25px;
-                                         color: white;
-                                         display: table;
-                                         border-radius: 50%;
-                                         -webkit-border-radius: 50%;
-                                         -moz-border-radius: 50%;
-                                         -ms-border-radius: 50%;
-                                         -o-border-radius: 50%;
-                                     }
-                                     
-                                     .icon {
-                                         margin-right: 15px;
-                                         //  background: #050c16;
-                                         justify-content: center;
-                                         width: 40px;
-                                         height: 40px;
-                                         display: table;
-                                         border-radius: 50%;
-                                     }
-                                     
-                                     .moncercle-i {
-                                         justify-content: center;
-                                         border-radius: 50%;
-                                         width: 40px;
-                                         height: 40px;
-                                         display: table;
-                                         -webkit-border-radius: 50%;
-                                         -moz-border-radius: 50%;
-                                         -ms-border-radius: 50%;
-                                         -o-border-radius: 50%;
-                                     }
-                                     
-                                     .moncercle span {
-                                         display: table-cell;
-                                         vertical-align: middle;
-                                         color: white;
-                                     }
-                                     
-                                     .icon span {
-                                         display: table-cell;
-                                         vertical-align: middle;
-                                         color: #7a8088;
-                                     }
-                                     
-                                     .icon i {
-                                         display: table-cell;
-                                         vertical-align: middle;
-                                         color: #876499;
-                                     }
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+        
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        @mixin cercle {
+            margin: 8px 15px 0px -12px;
+            background: #876499;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            color: white;
+            display: table;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        .header {
+            width: 100%;
+            display: flex;
+            //  box-shadow: 1px 1px 12px #afa2a2;
+            justify-content: center;
+            &__logo {
+                height: 30px;
+                padding: 1rem;
+            }
+            &__search {
+                width: 100%;
+                text-decoration: none;
+                border-top: 0.1px solid silver;
+                border-bottom: 0.1px solid silver;
+                font-size: 1.3rem;
+                // background-color: rgb(228, 20, 20);
+                &--icon {
+                    padding: 1rem;
+                }
+                &--input {
+                    padding: 1rem;
+                    .textbox {
+                        border: 1px solid white;
+                        outline: 0;
+                        background-color: white;
+                        font-size: 16px;
+                        padding: 3px 6px 3px 6px;
+                    }
+                }
+            }
+        }
+        
+        .foot {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            &--heading {
+                padding: 1.5rem;
+                width: 65%;
+                font-size: 28px;
+                font-weight: bold;
+                height: auto;
+                color: black;
+                display: flex;
+                text-justify: auto;
+                padding: 1.5rem 1.5rem 0 1.5rem;
+            }
+            &--title {
+                width: 90%;
+                font-size: 24px;
+                padding: 1.5rem;
+                color: rgb(207, 202, 202);
+            }
+            &--text {
+                width: 60%;
+                padding: 1.5rem;
+                font-size: 22px;
+                color: white;
+                background-image: linear-gradient(to bottom, rgba(255, 128, 255, 0.5), rgba(0, 0, 128, 0.5));
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+            }
+        }
+        
+        .filtre {
+            line-height: 4px;
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 1.5rem;
+        }
+        
+        .fonction {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__filtre {
+                margin-right: 15rem;
+                padding-top: 2rem;
+                font-size: 1.5rem;
+            }
+            &__card {
+                width: 80%;
+                height: 38px;
+                display: table;
+                text-align: center;
+                border-radius: 30px 30px 30px 30px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                border: 3px solid #F2F2F2;
+                margin-top: 20px;
+                &__cercle {
+                    margin: 8px 15px 0px -12px;
+                    padding-top: 0.3rem;
+                    background: #876499;
+                    justify-content: center;
+                    width: 38px;
+                    height: 22px;
+                    color: white;
+                    display: table;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    display: table-cell;
+                    vertical-align: middle;
+                    color: white;
+                    font-size: 0.8rem;
+                }
+                &__icon {
+                    margin: 12px 15px 0px 0px;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    display: table;
+                    border-radius: 50%;
+                    &--fas {
+                        color: #876499;
+                    }
+                }
+                &__choise {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    font-size: 1rem;
+                    font-weight: bolder;
+                    align-items: center;
+                    margin: auto 0.8rem;
+                }
+            }
+        }

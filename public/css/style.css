@@ -5,9 +5,7 @@
   padding: 0;
   box-sizing: inherit; }
 
-html,
 body {
-  font-family: 'Montserrat', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0; }
@@ -22,16 +20,17 @@ body {
   .header__search {
     width: 100%;
     text-decoration: none;
-    font-size: 1.3rem;
-    background-color: #afafe0; }
+    border-top: 0.1px solid silver;
+    border-bottom: 0.1px solid silver;
+    font-size: 1.3rem; }
     .header__search--icon {
       padding: 1rem; }
     .header__search--input {
       padding: 1rem; }
       .header__search--input .textbox {
-        border: 1px solid #afafe0;
+        border: 1px solid white;
         outline: 0;
-        background-color: #afafe0;
+        background-color: white;
         font-size: 16px;
         padding: 3px 6px 3px 6px; }
 
@@ -61,7 +60,7 @@ body {
     padding: 1.5rem;
     font-size: 22px;
     color: white;
-    background-color: #afafe0;
+    background-image: linear-gradient(to bottom, rgba(255, 128, 255, 0.5), rgba(0, 0, 128, 0.5));
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -74,22 +73,16 @@ body {
   font-weight: bolder;
   padding: 1.5rem; }
 
-.p0Nav-animaux {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  font-size: 1rem;
-  font-weight: bolder;
-  align-content: center;
-  margin: auto 0.8rem; }
-
 .fonction {
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  .fonction__filtre {
+    margin-right: 15rem;
+    padding-top: 2rem;
+    font-size: 1.5rem; }
   .fonction__card {
     width: 80%;
     height: 38px;
@@ -98,56 +91,44 @@ body {
     border-radius: 30px 30px 30px 30px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: auto;
+    justify-content: center;
     border: 3px solid #F2F2F2;
     margin-top: 20px; }
-
-.moncercle {
-  margin: 8px 15px 0px -12px;
-  background: #876499;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-  color: white;
-  display: table;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%; }
-
-.icon {
-  margin-right: 15px;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  display: table;
-  border-radius: 50%; }
-
-.moncercle-i {
-  justify-content: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: table;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%; }
-
-.moncercle span {
-  display: table-cell;
-  vertical-align: middle;
-  color: white; }
-
-.icon span {
-  display: table-cell;
-  vertical-align: middle;
-  color: #7a8088; }
-
-.icon i {
-  display: table-cell;
-  vertical-align: middle;
-  color: #876499; }
+    .fonction__card__cercle {
+      margin: 8px 15px 0px -12px;
+      padding-top: 0.3rem;
+      background: #876499;
+      justify-content: center;
+      width: 38px;
+      height: 22px;
+      color: white;
+      display: table;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+      font-size: 0.8rem; }
+    .fonction__card__icon {
+      margin: 12px 15px 0px 0px;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      display: table;
+      border-radius: 50%; }
+      .fonction__card__icon--fas {
+        color: #876499; }
+    .fonction__card__choise {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 1rem;
+      font-weight: bolder;
+      align-items: center;
+      margin: auto 0.8rem; }
 
 /*# sourceMappingURL=style.css.map */
