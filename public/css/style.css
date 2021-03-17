@@ -68,4 +68,86 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px; }
 
+.filtre {
+  line-height: 4px;
+  font-size: 1.3em;
+  font-weight: bolder;
+  padding: 1.5rem; }
+
+.p0Nav-animaux {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  font-weight: bolder;
+  align-content: center;
+  margin: auto 0.8rem; }
+
+.fonction {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .fonction__card {
+    width: 80%;
+    height: 38px;
+    display: table;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: auto;
+    border: 3px solid #F2F2F2;
+    margin-top: 20px; }
+
+.moncercle {
+  margin: 8px 15px 0px -12px;
+  background: #876499;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  color: white;
+  display: table;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
+
+.icon {
+  margin-right: 15px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: table;
+  border-radius: 50%; }
+
+.moncercle-i {
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: table;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
+
+.moncercle span {
+  display: table-cell;
+  vertical-align: middle;
+  color: white; }
+
+.icon span {
+  display: table-cell;
+  vertical-align: middle;
+  color: #7a8088; }
+
+.icon i {
+  display: table-cell;
+  vertical-align: middle;
+  color: #876499; }
+
 /*# sourceMappingURL=style.css.map */
