@@ -6,12 +6,19 @@
   box-sizing: inherit; }
 
 body {
+  width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: white no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .header {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center; }
   .header__logo {
@@ -20,9 +27,10 @@ body {
   .header__search {
     width: 100%;
     text-decoration: none;
-    border-top: 0.1px solid silver;
+    border-top: 0.1px solid rgba(192, 192, 192, 0.596);
     border-bottom: 0.1px solid silver;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    background-color: #f0dfdf; }
     .header__search--icon {
       padding: 1rem; }
     .header__search--input {
@@ -34,26 +42,34 @@ body {
         font-size: 16px;
         padding: 3px 6px 3px 6px; }
 
-.foot {
+main {
+  width: 100%;
+  height: 100%; }
+
+.aside {
+  width: 100%;
+  height: 100%; }
+
+.choise {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   padding-bottom: 1.5rem; }
-  .foot--heading {
+  .choise__heading {
     width: 65%;
     font-size: 28px;
     font-weight: bold;
     height: auto;
     color: black;
     display: flex; }
-  .foot--title {
+  .choise__title {
     width: 90%;
     font-size: 24px;
     padding: 1.5rem;
     color: #cfcaca; }
-  .foot--text {
+  .choise__text {
     width: 60%;
     padding: 1rem;
     font-size: 22px;
@@ -65,26 +81,23 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px; }
 
-.filtre {
-  line-height: 4px;
-  font-size: 1.3em;
-  font-weight: bolder;
-  padding: 1.5rem; }
-
 .fonction {
-  width: 100%;
+  width: auto;
   height: auto;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  border: 3px solid red; }
   .fonction__filtre {
-    margin-right: 15rem;
-    font-size: 1.5rem; }
+    width: 100%;
+    margin-right: 0rem;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    border: 3px solid red; }
   .fonction__card {
-    width: 80%;
+    width: 100%;
     height: 38px;
-    display: table;
     text-align: center;
     border-radius: 30px 30px 30px 30px;
     display: flex;
@@ -92,7 +105,8 @@ body {
     justify-content: center;
     border: 3px solid #F2F2F2;
     margin-top: 20px;
-    background-color: whitesmoke; }
+    background-color: whitesmoke;
+    border: 3px solid red; }
     .fonction__card__cercle {
       margin: 8px 15px 0px -12px;
       padding-top: 0.3rem;
@@ -130,8 +144,8 @@ body {
       align-items: center;
       margin: auto 0.8rem; }
 
-.container {
-  width: 100%;
+.food {
+  width: auto;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -139,77 +153,86 @@ body {
   margin: auto;
   background-color: whitesmoke;
   padding: 1rem; }
-
-.project {
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 2rem; }
-
-.project__heading {
-  width: 100%;
-  height: 1rem;
-  font-size: 0.8rem;
-  padding: 1rem 0 1.5rem 0;
-  font-size: 1.2rem;
-  font-weight: bold; }
-
-.project__img {
-  width: 100%;
-  height: 8rem;
-  object-fit: cover;
-  border-radius: 20px 20px 0px 0px; }
-
-.project__text {
-  width: 100%;
-  height: 2.5rem;
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border-radius: 0px 0px 20px 20px;
-  -webkit-border-radius: 0px 0px 20px 20px;
-  -moz-border-radius: 0px 0px 20px 20px;
-  -ms-border-radius: 0px 0px 20px 20px;
-  -o-border-radius: 0px 0px 20px 20px;
-  padding-left: 1rem; }
-
-.project__left {
-  width: 90%;
-  height: auto; }
-
-.project__rigth {
-  width: 10%;
-  height: auto;
-  margin: auto; }
-
-.project__title {
-  width: 100%;
-  height: auto;
-  font-size: 1.0rem;
-  font-weight: bold; }
-
-.project__comment {
-  width: 100%;
-  height: auto;
-  font-size: 0.8rem; }
-
-.newproject {
-  display: inline-block;
-  position: relative; }
-
-.newproject__text {
-  background: #00ffea;
-  z-index: 1;
-  position: absolute;
-  text-align: center;
-  font-family: Georgia;
-  margin: 10px 20px 0px 0px;
-  font-size: 0.6rem;
-  right: 0%;
-  top: 0%;
-  color: white;
-  width: 20%; }
+  .food__newproject {
+    display: inline-block;
+    position: relative; }
+    .food__newproject__text {
+      background: #00ffea;
+      z-index: 1;
+      position: absolute;
+      text-align: center;
+      font-family: Georgia;
+      margin: 10px 20px 0px 0px;
+      font-size: 0.6rem;
+      right: 0%;
+      top: 0%;
+      color: white;
+      width: 20%; }
+  .food__project {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .food__project__heading {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 0.8rem;
+      font-size: 1.2rem;
+      font-weight: bold; }
+    .food__project__img {
+      width: 98%;
+      height: 9.5rem;
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px; }
+  .food__project__text {
+    width: 98%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+    -ms-border-radius: 0px 0px 20px 20px;
+    -o-border-radius: 0px 0px 20px 20px;
+    padding-left: 1rem; }
+    .food__project__text__project__left {
+      width: 85%;
+      height: auto;
+      display: flex;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .food__project__text__project__left__project__title {
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 1.0rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start; }
+      .food__project__text__project__left__project__comment {
+        width: 100%;
+        height: auto;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: flex-start; }
+    .food__project__text__project__rigth {
+      width: 15%;
+      height: auto;
+      margin: auto;
+      font-size: 1.3rem; }
+      .food__project__text__project__rigth .fas {
+        display: none; }
+      .food__project__text__project__rigth:hover {
+        color: #a110be; }
+        .food__project__text__project__rigth:hover .far {
+          display: none; }
+        .food__project__text__project__rigth:hover .fas {
+          display: block; }
 
 /*# sourceMappingURL=style.css.map */
