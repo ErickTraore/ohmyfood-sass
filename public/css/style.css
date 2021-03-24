@@ -25,8 +25,33 @@ body {
   .header__logo {
     width: 100%;
     height: 2.5rem;
-    padding: 1.5rem 0 1rem 0;
-    background-color: white; }
+    padding: 2.8rem 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 5px solid grey; }
+    .header__logo--icon {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0px 0px 0px 0px; }
+      .header__logo--icon__fas {
+        width: 20%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        font-size: 2rem;
+        margin: 0px 0px 0px 0px;
+        padding: 0.8rem; }
+      .header__logo--icon__img {
+        width: 50%;
+        height: 60%;
+        margin: auto;
+        display: flex;
+        font-size: 2rem;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px; }
   .header__search {
     width: 100%;
     text-decoration: none;
@@ -84,7 +109,7 @@ main {
     margin-bottom: 4rem;
     font-size: 24px;
     color: white;
-    background-image: linear-gradient(to bottom, rgba(255, 128, 255, 0.5), rgba(0, 0, 128, 0.5));
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -119,7 +144,7 @@ main {
     .fonction__card__cercle {
       margin: 27px 15px 0px -12px;
       padding-top: 0.3rem;
-      background: #876499;
+      background: #9356DC;
       justify-content: center;
       width: 38px;
       height: 22px;
@@ -143,7 +168,7 @@ main {
       display: table;
       border-radius: 50%; }
       .fonction__card__icon--fas {
-        color: #876499; }
+        color: #9356DC; }
     .fonction__card__choise {
       width: 100%;
       height: auto;
@@ -167,7 +192,7 @@ main {
     display: inline-block;
     position: relative; }
     .food__newproject__text {
-      background: #00ffea;
+      background: #99E2D0;
       z-index: 1;
       position: absolute;
       text-align: center;
@@ -240,7 +265,7 @@ main {
       .food__project__text__project__rigth .fas {
         display: none; }
       .food__project__text__project__rigth:hover {
-        color: #a110be; }
+        color: #9356DC; }
         .food__project__text__project__rigth:hover .far {
           display: none; }
         .food__project__text__project__rigth:hover .fas {
