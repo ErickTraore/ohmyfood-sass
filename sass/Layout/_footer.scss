@@ -1,0 +1,36 @@
+.footer {
+    width: auto;
+    height: auto;
+    display: block;
+    justify-content: flex-start;
+    padding: 1.5rem 0 0.9rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(48, 46, 46);
+    &__line {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto 10px;
+        justify-content: flex-start;
+        align-content: center;
+        &__icon {
+            width: 26px;
+            height: 30px;
+            padding: 0.3rem;
+            font-size: 1.1rem;
+            margin: 2px 0px 0px 4px;
+            &--small {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9rem;
+                margin: 6px 0px 0px 6px;
+            }
+        }
+        &__text {
+            width: 100%;
+            height: auto;
+            padding: 0.2rem;
+        }
+    }
+}

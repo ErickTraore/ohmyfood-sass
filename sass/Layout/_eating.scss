@@ -1,0 +1,68 @@
+.eating {
+    width: 100%;
+    height: auto;
+    padding: 4rem 2rem 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    &__filtre {
+        width: 100%;
+        padding-bottom: 1rem;
+        align-items: flex-start;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    &__card {
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        @include borderRadius($radiusDefault);
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        border: 3px solid #F2F2F2;
+        margin-top: 20px;
+        background-color: whitesmoke;
+        &__cercle {
+            margin: 27px 15px 0px -12px;
+            padding-top: 0.3rem;
+            background: $colour-primary;
+            justify-content: center;
+            width: 38px;
+            height: 22px;
+            color: white;
+            display: table;
+            @include borderRadius($radiusCircle);
+
+            display: table-cell;
+            vertical-align: middle;
+            color: white;
+            font-size: 0.8rem;
+        }
+        &__icon {
+            margin: 30px 15px 0px 0px;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            font-size: 1.3rem;
+            display: table;
+            @include borderRadius($radiusCircle);
+
+            &--fas {
+                color: $colour-primary;
+            }
+        }
+        &__choise {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            align-items: center;
+            margin: auto 0.8rem;
+        }
+    }
+}

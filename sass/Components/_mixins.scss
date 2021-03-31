@@ -1,0 +1,23 @@
+@mixin borderRadius($radius:5px){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+@mixin borderRadiusBotton($radius:5px){
+    border-radius: 0px 0px $radius $radius;
+    -webkit-border-radius: 0px 0px $radius $radius;
+    -moz-border-radius: 0px 0px $radius $radius;
+    -ms-border-radius: 0px 0px $radius $radius;
+    -o-border-radius: 0px 0px $radius $radius;
+}
+@mixin borderRadiusTop($radius:5px){
+    border-radius: $radius $radius 0px 0px;
+    -webkit-border-radius: $radius $radius 0px 0px;
+    -moz-border-radius: $radius $radius 0px 0px;
+    -ms-border-radius: $radius $radius 0px 0px;
+    -o-border-radius: $radius $radius 0px 0px;
+}
+@mixin borderRadiusLeft(){}
+@mixin borderRadiusRigth(){}
