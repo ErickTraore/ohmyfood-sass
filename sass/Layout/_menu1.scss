@@ -1,86 +1,133 @@
-.menu1{
-    width:100%;
-    height:auto;
-    &__preview{
-        width:100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        &__img{
-            width:100%;
-            height:auto;
-            z-index: +1;
-            object-fit: cover;
-        }
-    }
-    &__in{
-         width:100%;
-         height:auto;
+ body {
+     width: 100%;
+     height: auto;
+ }
+ 
+ .menu1 {
+     width: 100%;
+     height: auto;
+     &__preview {
+         width: 100%;
+         height: auto;
+         display: flex;
+         justify-content: center;
+         &__img {
+             width: 100%;
+             height: auto;
+             z-index: +1;
+             object-fit: cover;
+         }
+     }
+     &__in {
+         width: 100%;
+         height: auto;
          display: flex;
          justify-content: flex-start;
          flex-direction: column;
-         background: white;
+         background: aliceblue;
          @include borderRadiusTop(80px);
-         border:3px solid red;
-         &__title{
-                width:100%;
-                height:auto;
-                display: flex;
-                justify-content: space-around;
-                margin: auto;
+         border: 3px solid red;
+         &__title {
+             width: 100%;
+             height: auto;
+             display: flex;
+             justify-content: space-around;
+             margin: auto;
+             align-items: center;
+             padding: 4rem 0;
+             &__text {
+                 height: auto;
+                 font-size: 3.5rem;
+                 font-weight: bold;
+             }
+             &__far {
+                 height: auto;
                  align-items: center;
-                padding: 4rem 0;
-                &__text{
-                   height:auto;
-                   font-size: 3.5rem;
-                   font-weight: bold;
-                }
-                &__far{ 
-                   height:auto;
-                   align-items: center;
-                   font-size: 2rem;
-                }
-         }           
-         &__menu{
-                   width:17%;
-                   height:auto;
-                   justify-content: space-around;
-                   font-size: 2rem;
-                   margin-left: 20px;
-                   border-bottom:5px solid green;
-        }
-        &__comment{
-                    width:100%;
-                    height:auto;
-                    display: flex;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    background: white;
-                    &__btn{  
-                          width:80%;
-                          height:auto;
-                          align-items: center;
-                          margin: 10px auto;
-                          padding: 1.5rem 2rem;
-                          font-size: 2rem;
-                          box-shadow: 1px 1px 12px #F2F2F2;
-                          @include borderRadius(30px);
-                          background-color: green;
-                          cursor: pointer;
-                          border: 1px solid red;
-                          transform: scale(1);
-                          transition: transform 400ms;
-
-                              &:hover {
-                                    transform: scale(1.10);
-                               }
-                          &__zoneA{ 
-                               width:70%;
-                               height:auto;
-                               display: flex;
-                               justify-content: space-between;
-                    }
-                    }
-        }
-}
-}
+                 font-size: 2rem;
+             }
+         }
+         &__menu {
+             width: 17%;
+             height: auto;
+             justify-content: space-around;
+             font-size: 2rem;
+             margin-left: 20px;
+             border-bottom: 5px solid green;
+         }
+         &__comment {
+             width: 100%;
+             height: auto;
+             display: flex;
+             justify-content: flex-start;
+             flex-direction: column;
+             background: #aec3d5;
+             &__btn {
+                 width: 80%;
+                 height: auto;
+                 display: flex;
+                 justify-content: space-between;
+                 flex-direction: row;
+                 margin: 5px auto;
+                 padding-left: 1rem;
+                 font-size: 1.3rem;
+                 //   box-shadow: 1px 1px 12px #F2F2F2;
+                 @include borderRadius(20px);
+                 //   background-color: green;
+                 transform: scale(1);
+                 transition: transform 400ms;
+                 background: white;
+                 &__zoneA {
+                     width: 70%;
+                     height: auto;
+                     display: flex;
+                     // background: skyblue;
+                     justify-content: space-between;
+                     flex-direction: column;
+                     cursor: pointer;
+                     //     &:hover {
+                     //         background: skyblue;
+                     //    }
+                 }
+                 &__zoneB {
+                     width: 30%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: row-reverse;
+                     &__zoneB2 {
+                         width: 50%;
+                         height: auto; //           // height:4rem;
+                         display: flex;
+                         justify-content: flex-end;
+                         align-self: flex-end;
+                         & p {
+                             margin: 0 0.5rem 0 0.5rem;
+                         }
+                         cursor: pointer;
+                         &:hover {
+                             transform: translate(-120%);
+                             &:hover+.menu1__in__comment__btn__zoneB__zoneB1 {
+                                 transform: translate(101%);
+                                 opacity: 1;
+                                 -webkit-transform: translate(101%);
+                                 -moz-transform: translate(101%);
+                                 -ms-transform: translate(101%);
+                                 -o-transform: translate(101%);
+                             }
+                         }
+                     }
+                     &__zoneB1 {
+                         width: 50%;
+                         height: auto; //           // height:4rem;
+                         display: flex;
+                         justify-content: center;
+                         background: lightgreen;
+                         padding: 0rem;
+                         opacity: 0;
+                         align-items: center;
+                         @include borderRadiusRigth(20px);
+                     }
+                 }
+             }
+         }
+     }
+ }
