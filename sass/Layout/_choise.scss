@@ -1,36 +1,31 @@
-.choise {
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(243, 235, 235);
-    &__heading {
-        width: 65%;
-        height: auto;
-        padding-top: 3rem;
-        text-align: center;
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: black;
-        display: flex;
-    }
-    &__title {
+    $border-rad: 2rem;
+    $clr-btn: #15DEA5;
+    .choise {
         width: 100%;
-        font-size: 22px;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        color: rgb(155, 151, 151);
+        height: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(243, 235, 235);
+        &__heading {
+            width: 65%;
+            height: auto;
+            padding-top: 3rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: black;
+            display: flex;
+        }
+        &__title {
+            width: 100%;
+            font-size: 22px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            color: rgb(155, 151, 151);
+        }
+        &__btn {
+            @include buttonAuto();
+        }
     }
-    &__text {
-        width: 60%;
-        padding: 0.8rem;
-        margin-bottom: 4rem;
-        font-size: 24px;
-        color: white;
-        background-image: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-        @include borderRadius($radiusDefault);
-       
-    }
-}

@@ -1,133 +1,159 @@
- body {
-     width: 100%;
-     height: auto;
- }
- 
- .menu1 {
-     width: 100%;
-     height: auto;
-     &__preview {
-         width: 100%;
-         height: auto;
-         display: flex;
-         justify-content: center;
-         &__img {
-             width: 100%;
-             height: auto;
-             z-index: +1;
-             object-fit: cover;
-         }
-     }
-     &__in {
-         width: 100%;
-         height: auto;
-         display: flex;
-         justify-content: flex-start;
-         flex-direction: column;
-         background: aliceblue;
-         @include borderRadiusTop(80px);
-         border: 3px solid red;
-         &__title {
-             width: 100%;
-             height: auto;
-             display: flex;
-             justify-content: space-around;
-             margin: auto;
-             align-items: center;
-             padding: 4rem 0;
-             &__text {
-                 height: auto;
-                 font-size: 3.5rem;
-                 font-weight: bold;
-             }
-             &__far {
-                 height: auto;
-                 align-items: center;
-                 font-size: 2rem;
-             }
-         }
-         &__menu {
-             width: 17%;
-             height: auto;
-             justify-content: space-around;
-             font-size: 2rem;
-             margin-left: 20px;
-             border-bottom: 5px solid green;
-         }
-         &__comment {
-             width: 100%;
-             height: auto;
-             display: flex;
-             justify-content: flex-start;
-             flex-direction: column;
-             background: #aec3d5;
-             &__btn {
-                 width: 80%;
-                 height: auto;
-                 display: flex;
-                 justify-content: space-between;
-                 flex-direction: row;
-                 margin: 5px auto;
-                 padding-left: 1rem;
-                 font-size: 1.3rem;
-                 //   box-shadow: 1px 1px 12px #F2F2F2;
-                 @include borderRadius(20px);
-                 //   background-color: green;
-                 transform: scale(1);
-                 transition: transform 400ms;
-                 background: white;
-                 &__zoneA {
-                     width: 70%;
-                     height: auto;
-                     display: flex;
-                     // background: skyblue;
-                     justify-content: space-between;
-                     flex-direction: column;
-                     cursor: pointer;
-                     //     &:hover {
-                     //         background: skyblue;
-                     //    }
-                 }
-                 &__zoneB {
-                     width: 30%;
-                     height: auto;
-                     display: flex;
-                     flex-direction: row-reverse;
-                     &__zoneB2 {
-                         width: 50%;
-                         height: auto; //           // height:4rem;
-                         display: flex;
-                         justify-content: flex-end;
-                         align-self: flex-end;
-                         & p {
-                             margin: 0 0.5rem 0 0.5rem;
-                         }
-                         cursor: pointer;
-                         &:hover {
-                             transform: translate(-120%);
-                             &:hover+.menu1__in__comment__btn__zoneB__zoneB1 {
-                                 transform: translate(101%);
-                                 opacity: 1;
-                                 -webkit-transform: translate(101%);
-                                 -moz-transform: translate(101%);
-                                 -ms-transform: translate(101%);
-                                 -o-transform: translate(101%);
-                             }
-                         }
-                     }
-                     &__zoneB1 {
-                         width: 50%;
-                         height: auto; //           // height:4rem;
-                         display: flex;
-                         justify-content: center;
-                         background: lightgreen;
-                         padding: 0rem;
-                         opacity: 0;
-                         align-items: center;
-                         @include borderRadiusRigth(20px);
-                     }
-                 }
-             }
-         }
-     }
- }
+          .menu1 {
+              width: 100%;
+              height: 100%;
+              &__preview {
+                  width: auto;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+                  &__img {
+                      width: auto;
+                      height: 21rem;
+                      z-index: -1;
+                      object-fit: cover;
+                  }
+                  &__title {
+                      width: 100%;
+                      height: auto;
+                      display: flex;
+                      justify-content: space-between;
+                      @include borderRadiusTop(30px);
+                      background: aliceblue;
+                      position: absolute;
+                      z-index: 1;
+                      right: 0%;
+                      bottom: 0%;
+                      padding: 6% 0% 0% 0%;
+                      &__text {
+                          height: auto;
+                          width: 100%;
+                          height: auto;
+                          font-size: xx-large;
+                          font-stretch: normal;
+                          font-family: 'shrikhandregular';
+                          //   font-family: 'ralewayregular';
+                          //   font-family: 'robotoblack';
+                          //   font-style: italic;
+                          //   font-family: "ralewayregular";
+                          //   font: "$font-stack-02";
+                          //   font: '$font-stack';
+                          padding: 0% 0% 0% 2%;
+                          font-weight: bold;
+                      }
+                      &__far {
+                          height: auto;
+                          align-self: center;
+                          font-size: 2rem;
+                          padding: 0% 6% 0% 0%;
+                      }
+                  }
+              }
+              &__in {
+                  width: 100%;
+                  height: auto;
+                  display: flex;
+                  justify-content: flex-start;
+                  flex-direction: column;
+                  background: aliceblue;
+                  padding-top: 1.5rem;
+                  &__menu {
+                      width: 5%;
+                      height: auto;
+                      justify-content: space-around;
+                      font-size: 1rem;
+                      font-weight: bold;
+                      margin-left: 1rem;
+                      margin-bottom: 0.7rem;
+                      border-bottom: 3px solid rgb(33, 109, 33);
+                  }
+                  &__comment {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      justify-content: flex-start;
+                      flex-direction: column;
+                      background: aliceblue;
+                      &__btn {
+                          width: 90%;
+                          height: 4rem;
+                          display: flex;
+                          justify-content: space-between;
+                          flex-direction: row;
+                          margin: 5px auto;
+                          padding: 0rem 0rem 0rem 0.5rem;
+                          font-size: 1.1rem;
+                          box-shadow: 1px 1px 12px grey;
+                          @include borderRadius(20px);
+                          background: white;
+                          &__zoneA {
+                              width: 70%;
+                              height: auto;
+                              display: flex;
+                              justify-content: space-between;
+                              flex-direction: column;
+                              cursor: pointer;
+                              padding: 0.4rem;
+                              &>p:first-child {
+                                  display: flex;
+                                  font-size: 1.1rem;
+                                  font-weight: bold;
+                              }
+                              &>p:last-child {
+                                  display: flex;
+                                  font-size: 0.85rem;
+                              }
+                          }
+                          &__zoneB {
+                              width: 30%;
+                              height: auto;
+                              display: flex;
+                              flex-direction: row-reverse;
+                              &__zoneB2 {
+                                  width: 50%;
+                                  height: auto; //           // height:4rem;
+                                  display: flex;
+                                  justify-content: flex-end;
+                                  align-self: flex-end;
+                                  & p {
+                                      margin: 0 0.5rem 0.3rem 0.5rem;
+                                  }
+                                  cursor: pointer;
+                                  &:hover {
+                                      transform: translate(-120%);
+                                      &:hover+.menu1__in__comment__btn__zoneB__zoneB1 {
+                                          transform: translate(101%);
+                                          opacity: 1;
+                                          -webkit-transform: translate(101%);
+                                          -moz-transform: translate(101%);
+                                          -ms-transform: translate(101%);
+                                          -o-transform: translate(101%);
+                                      }
+                                  }
+                              }
+                              &__zoneB1 {
+                                  width: 50%;
+                                  height: auto; //          
+                                  //  height: 4rem;
+                                  display: flex;
+                                  justify-content: center;
+                                  background: $colour-tertiaire;
+                                  opacity: 0;
+                                  align-items: center;
+                                  @include borderRadiusRigth(20px);
+                              }
+                          }
+                      }
+                  }
+              }
+              &__commandez {
+                  width: 30%;
+                  display: flex;
+                  justify-content: center;
+                  align-self: center;
+                  margin-top: 3rem;
+                  &__btn {
+                      @include buttonAuto();
+                  }
+              }
+          }

@@ -1,0 +1,52 @@
+﻿                    $cd-box:yelloW;
+                    $cd-txt: #6300a0;
+                    $cd-txt--invalid: #fff;
+                    $cd-danger: #b20a37;
+                    .form {
+                        width: 100%;
+                        height: 8rem;
+                        font-size: 1.5rem;
+                        // padding: 3rem;
+                        color: $colour-primary;
+                        & label {
+                            & p:first-child {
+                                font-size: 2rem;
+                                color: black;
+                            }
+                            & p:last-child {
+                                font-size: 1.3rem;
+                            }
+                        }
+                        & input {
+                            border: 2px solid $cd-box;
+                            border-radius: 100rem;
+                            color: $cd-txt;
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 1.5rem;
+                            outline: none;
+                            padding: .5rem 1.5rem;
+                            width: 80%;
+                            &:focus {
+                                border: 2px solid $cd-txt;
+                            }
+                            &:not(:focus):invalid {
+                                background: $cd-danger;
+                                border: 2px solid $cd-danger;
+                                color: $cd-txt--invalid;
+                            }
+                        }
+                    }
+                    
+                    .commandez {
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding: 0.5rem;
+                        margin: auto;
+                        &__btn {
+                            padding: 2rem;
+                            align-items: center;
+                            @include buttonAuto();
+                        }
+                    }
