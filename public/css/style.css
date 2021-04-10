@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   font: 100% "robotoregular", Helvetica, sans-serif;
-  background: lightgrey; }
+  background: #ececec; }
 
 a:link {
   text-decoration: none; }
@@ -40,8 +40,8 @@ a:link {
   justify-content: center; }
   .header__logo {
     width: 100%;
-    height: 2.5rem;
-    padding: 2.8rem 0 2rem 0;
+    height: 1.6rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     background-color: white;
@@ -65,25 +65,26 @@ a:link {
         display: inline-flex;
         font-size: 2rem; }
   .header__search {
-    background-color: lightgrey;
+    background-color: #ececec;
     width: 100%;
     text-decoration: none;
     font-size: 1.3rem; }
     .header__search--icon {
-      background-color: lightgrey;
-      padding: 1rem;
-      border: 1px solid lightgrey; }
+      background-color: #ececec;
+      padding: 1rem 0;
+      border: 1px solid #ececec; }
     .header__search--input {
-      padding: 1rem; }
+      width: 100%;
+      padding: 1rem 0; }
       .header__search--input .textbox {
-        border: 1px solid lightgrey;
+        border: 1px solid #ececec;
         border-radius: 100rem;
         -webkit-border-radius: 100rem;
         -moz-border-radius: 100rem;
         -o-border-radius: 100rem;
         -ms-border-radius: 100rem;
         outline: 0;
-        background-color: lightgrey;
+        background-color: #ececec;
         font-size: 16px;
         padding: 3px 6px 3px 6px;
         transform: scale(1);
@@ -99,7 +100,7 @@ a:link {
   justify-content: flex-start;
   padding: 1.5rem 0 0.9rem 1rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: #302e2e; }
   .footer__line {
     width: 100%;
@@ -109,14 +110,14 @@ a:link {
     justify-content: flex-start;
     align-content: center; }
     .footer__line__icon {
-      width: 26px;
-      height: 30px;
+      width: 6%;
+      height: 6%;
       padding: 0.3rem;
       font-size: 1.1rem;
-      margin: 2px 0px 0px 4px; }
+      margin: 0px 0px 0px 4px; }
       .footer__line__icon--small {
-        width: 30px;
-        height: 30px;
+        width: 6%;
+        height: 6%;
         font-size: 0.9rem;
         margin: 6px 0px 0px 6px; }
     .footer__line__text {
@@ -133,7 +134,7 @@ a:link {
   justify-content: center;
   margin: auto;
   background-color: whitesmoke;
-  padding: 4rem 1.5rem 2rem 1.5rem; }
+  padding: 2rem 1.5rem 2rem 1.5rem; }
   .food__newproject {
     display: inline-block;
     position: relative; }
@@ -150,26 +151,30 @@ a:link {
       z-index: 1;
       right: 0%;
       top: 2%; }
+  .food__heading {
+    width: 100%;
+    height: 1.8rem;
+    padding-bottom: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    font-weight: bold; }
   .food__project {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2rem; }
-    .food__project:hover {
-      box-shadow: 0 5px 5px 0 #c3c3c3; }
-    .food__project__heading {
-      width: 100%;
-      height: 1rem;
-      padding-bottom: 0.8rem;
-      display: flex;
-      justify-content: flex-start;
-      font-size: 1.8rem;
-      font-weight: bold; }
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    -ms-border-radius: 30px; }
     .food__project__img {
       width: 100%;
-      height: 12.5rem;
+      height: 9rem;
       object-fit: cover;
       border-radius: 30px 30px 0px 0px;
       -webkit-border-radius: 30px 30px 0px 0px;
@@ -178,7 +183,7 @@ a:link {
       -o-border-radius: 30px 30px 0px 0px; }
   .food__project__text {
     width: 100%;
-    height: 5.5rem;
+    height: 4.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -191,7 +196,7 @@ a:link {
     padding-left: 1rem; }
     .food__project__text__project__left {
       width: 85%;
-      height: auto;
+      height: 83%;
       display: flex;
       justify-content: center;
       color: black;
@@ -199,7 +204,7 @@ a:link {
       .food__project__text__project__left__project__title {
         width: 100%;
         margin-bottom: 4px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bold;
         display: flex;
         justify-content: flex-start; }
@@ -221,8 +226,8 @@ a:link {
         opacity: 0;
         transition: all 400ms;
         position: absolute;
-        bottom: 11%;
-        left: 85.4%;
+        bottom: 11.2%;
+        left: 85.3%;
         -webkit-transition: all 400ms;
         -moz-transition: all 400ms;
         -ms-transition: all 400ms;
@@ -237,27 +242,27 @@ a:link {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  background-color: #f3ebeb; }
+  background-color: #f6f6f6; }
   .choise__heading {
     width: 65%;
     height: auto;
     padding-top: 3rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: black;
     display: flex; }
   .choise__title {
     width: 100%;
-    font-size: 22px;
-    padding: 0.5rem;
+    font-size: 17px;
+    padding: 0.1rem;
     margin-bottom: 1rem;
     color: #9b9797; }
   .choise__btn {
     width: auto;
     padding: 1rem 2rem;
-    margin: 1rem 1rem 2rem 1rem;
-    font-size: 20px;
+    margin: 1rem 1rem 3rem 1rem;
+    font-size: 14px;
     color: white;
     background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
     border-radius: 30px;
@@ -418,7 +423,7 @@ aside {
         height: auto;
         width: 100%;
         height: auto;
-        font-size: xx-large;
+        font-size: x-large;
         font-stretch: normal;
         font-family: 'shrikhandregular';
         padding: 0% 0% 0% 2%;
@@ -447,14 +452,14 @@ aside {
       border-bottom: 3px solid #216d21; }
     .menu1__in__comment {
       width: 100%;
-      height: 100%;
+      height: auto;
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
       background: aliceblue; }
       .menu1__in__comment__btn {
         width: 90%;
-        height: 4rem;
+        height: auto;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -479,11 +484,11 @@ aside {
           position: relative; }
           .menu1__in__comment__btn__zoneA > p:first-child {
             display: flex;
-            font-size: 1.1rem;
+            font-size: .8rem;
             font-weight: bold; }
           .menu1__in__comment__btn__zoneA > p:last-child {
             display: flex;
-            font-size: 0.85rem; }
+            font-size: 0.7rem; }
           .menu1__in__comment__btn__zoneA:hover + .menu1__in__comment__btn__zoneB {
             opacity: 1;
             transform: translate(0%, 0);
@@ -527,6 +532,7 @@ aside {
             height: auto;
             display: flex;
             justify-content: center;
+            color: white;
             background: #99E2D0;
             opacity: 0;
             align-items: center;
@@ -544,8 +550,8 @@ aside {
     .menu1__commandez__btn {
       width: auto;
       padding: 1rem 2rem;
-      margin: 1rem 1rem 2rem 1rem;
-      font-size: 20px;
+      margin: 1rem 1rem 3rem 1rem;
+      font-size: 14px;
       color: white;
       background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
       border-radius: 30px;
@@ -581,7 +587,7 @@ aside {
 .fonction {
   width: 100%;
   height: auto;
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 2rem 1rem 2em 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -590,7 +596,7 @@ aside {
     width: 100%;
     padding-bottom: 1rem;
     align-items: flex-start;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold; }
   .fonction__card {
     width: 100%;
@@ -603,7 +609,10 @@ aside {
     border: 3px solid #F2F2F2;
     margin-top: 20px;
     box-shadow: 0 5px 15px 0 #c3c3c3;
-    background-color: whitesmoke; }
+    background-color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 0 0rem;
+    margin: 1rem 0rem; }
     .fonction__card:hover {
       box-shadow: 0 5px 5px 0 #c3c3c3; }
     .fonction__card__cercle {
@@ -627,7 +636,7 @@ aside {
     .fonction__card__icon {
       margin: 30px 15px 0px 0px;
       justify-content: center;
-      width: 40px;
+      width: 4%;
       height: 40px;
       font-size: 1.3rem;
       display: table;
@@ -639,7 +648,7 @@ aside {
       height: auto;
       display: flex;
       flex-wrap: nowrap;
-      font-size: 1.2rem;
+      font-size: .9rem;
       font-weight: bolder;
       align-items: center;
       margin: auto 0.8rem; }
@@ -682,8 +691,8 @@ aside {
     align-items: center;
     width: auto;
     padding: 1rem 2rem;
-    margin: 1rem 1rem 2rem 1rem;
-    font-size: 20px;
+    margin: 1rem 1rem 3rem 1rem;
+    font-size: 14px;
     color: white;
     background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
     border-radius: 30px;

@@ -9,8 +9,8 @@
                 justify-content: center;
                 &__logo {
                     width: 100%;
-                    height: 2.5rem;
-                    padding: 2.8rem 0 2rem 0;
+                    height: 1.6rem;
+                    padding: 1rem;
                     display: flex;
                     justify-content: space-around;
                     background-color: white;
@@ -38,23 +38,25 @@
                     }
                 }
                 &__search {
-                    background-color: lightgrey;
+                    background-color: #ececec;
+                    ;
                     width: 100%;
                     text-decoration: none;
                     // border-top: 0.1px solid rgba(192, 192, 192, 0.596);
                     font-size: 1.3rem;
                     &--icon {
-                        background-color: lightgrey;
-                        padding: 1rem;
-                        border: 1px solid lightgrey;
+                        background-color: #ececec;
+                        padding: 1rem 0;
+                        border: 1px solid #ececec;
                     }
                     &--input {
-                        padding: 1rem;
+                        width: 100%;
+                        padding: 1rem 0;
                         .textbox {
-                            border: 1px solid lightgrey;
+                            border: 1px solid#ececec;
                             @include borderRadius(100rem);
                             outline: 0;
-                            background-color: lightgrey;
+                            background-color: #ececec;
                             font-size: 16px;
                             padding: 3px 6px 3px 6px;
                             transform: scale(1);

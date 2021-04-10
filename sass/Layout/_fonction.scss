@@ -1,7 +1,7 @@
 ﻿.fonction {
     width: 100%;
     height: auto;
-    padding: 4rem 2rem 4rem 2rem;
+    padding: 2rem 1rem 2em 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,7 +10,7 @@
         width: 100%;
         padding-bottom: 1rem;
         align-items: flex-start;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: bold;
     }
     &__card {
@@ -25,6 +25,9 @@
         margin-top: 20px;
         box-shadow: 0 5px 15px 0 #c3c3c3;
         background-color: whitesmoke;
+        font-size: 1.2rem;
+        padding: 0 0rem;
+        margin: 1rem 0rem;
         &:hover {
             box-shadow: 0 5px 5px 0 #c3c3c3;
         }
@@ -50,7 +53,7 @@
         &__icon {
             margin: 30px 15px 0px 0px;
             justify-content: center;
-            width: 40px;
+            width: 4%;
             height: 40px;
             font-size: 1.3rem;
             display: table;
@@ -64,7 +67,7 @@
             height: auto;
             display: flex;
             flex-wrap: nowrap;
-            font-size: 1.2rem;
+            font-size: .9rem;
             font-weight: bolder;
             align-items: center;
             margin: auto 0.8rem;

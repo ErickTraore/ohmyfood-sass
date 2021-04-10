@@ -44,8 +44,8 @@
     @mixin buttonAuto() {
         width: auto;
         padding: 1rem 2rem;
-        margin: 1rem 1rem 2rem 1rem;
-        font-size: 20px;
+        margin: 1rem 1rem 3rem 1rem;
+        font-size: 14px;
         color: white;
         background-image: linear-gradient(to bottom, $colour-secondary, $colour-primary);
         @include borderRadius($radiusDefault);

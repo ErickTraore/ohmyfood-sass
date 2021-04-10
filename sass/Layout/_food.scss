@@ -6,7 +6,7 @@
      justify-content: center;
      margin: auto;
      background-color: whitesmoke;
-     padding: 4rem 1.5rem 2rem 1.5rem;
+     padding: 2rem 1.5rem 2rem 1.5rem;
      &__newproject {
          display: inline-block;
          position: relative;
@@ -23,8 +23,16 @@
              z-index: 1;
              right: 0%;
              top: 2%;
-             ;
          }
+     }
+     &__heading {
+         width: 100%;
+         height: 1.8rem;
+         padding-bottom: 0.8rem;
+         display: flex;
+         justify-content: flex-start;
+         font-size: 1.4rem;
+         font-weight: bold;
      }
      &__project {
          width: 100%;
@@ -33,28 +41,18 @@
          flex-wrap: wrap;
          justify-content: center;
          margin-bottom: 2rem;
-         &:hover {
-             box-shadow: 0 5px 5px 0 #c3c3c3;
-         }
-         &__heading {
-             width: 100%;
-             height: 1rem;
-             padding-bottom: 0.8rem;
-             display: flex;
-             justify-content: flex-start;
-             font-size: 1.8rem;
-             font-weight: bold;
-         }
+         box-shadow: 0 5px 15px 0 #c3c3c3;
+         @include borderRadius($radiusDefault);
          &__img {
              width: 100%;
-             height: 12.5rem;
+             height: 9rem;
              object-fit: cover;
              @include borderRadiusTop($radiusDefault);
          }
      }
      &__project__text {
          width: 100%;
-         height: 5.5rem;
+         height: 4.5rem;
          display: flex;
          flex-direction: row;
          justify-content: flex-start;
@@ -63,7 +61,7 @@
          padding-left: 1rem;
          &__project__left {
              width: 85%;
-             height: auto;
+             height: 83%;
              display: flex;
              justify-content: center;
              color: black;
@@ -71,7 +69,7 @@
              &__project__title {
                  width: 100%;
                  margin-bottom: 4px;
-                 font-size: 1.3rem;
+                 font-size: 1.1rem;
                  font-weight: bold;
                  display: flex;
                  justify-content: flex-start;
@@ -97,8 +95,8 @@
                  opacity: 0;
                  transition: all 400ms;
                  position: absolute;
-                 bottom: 11%;
-                 left: 85.4%;
+                 bottom: 11.2%;
+                 left: 85.3%;
                  -webkit-transition: all 400ms;
                  -moz-transition: all 400ms;
                  -ms-transition: all 400ms;
