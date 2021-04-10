@@ -1,106 +1,114 @@
-.food {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    background-color: whitesmoke;
-    padding: 4rem 1.5rem 2rem 1.5rem;
-    &__newproject {
-        display: inline-block;
-        position: relative;
-        &__text {
-            background: $colour-tertiaire;
-            z-index: 1;
-            position: absolute;
-            text-align: center;
-            font-family: Georgia;
-            margin: 5px 20px 0px 0px;
-            font-size: 1rem;
-            right: 0%;
-            top: 2%;
-            color: rgb(82, 80, 80);
-            width: 30%;
-            height: 10%;
-        }
-    }
-    &__project {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 2rem;
-        &:hover {
-            box-shadow: 0 5px 5px 0 #c3c3c3;
-        }
-        &__heading {
-            width: 100%;
-            height: 1rem;
-            padding-bottom: 0.8rem;
-            display: flex;
-            justify-content: flex-start;
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-        &__img {
-            width: 100%;
-            height: 12.5rem;
-            object-fit: cover;
-            @include borderRadiusTop($radiusDefault);
-        }
-    }
-    &__project__text {
-        width: 100%;
-        height: 5.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        background-color: white;
-        @include borderRadiusBotton($radiusDefault);
-        padding-left: 1rem;
-        &__project__left {
-            width: 85%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            color: black;
-            flex-direction: column;
-            &__project__title {
-                width: 100%;
-                margin-bottom: 4px;
-                font-size: 1.3rem;
-                font-weight: bold;
-                display: flex;
-                justify-content: flex-start;
-            }
-            &__project__comment {
-                width: 100%;
-                height: auto;
-                font-size: 1.2rem;
-                display: flex;
-                justify-content: flex-start;
-            }
-        }
-        &__project__rigth {
-            //opacity: 0.2;
-            width: 15%;
-            height: auto;
-            margin: auto;
-            font-size: 1.8rem;
-            .fas {
-                display: none;
-            }
-            &:hover {
-                .far {
-                    display: none;
-                }
-                .fas {
-                    display: block;
-                    color: $colour-primary;
-                }
-            }
-        }
-    }
-}
+ .food {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: auto;
+     background-color: whitesmoke;
+     padding: 4rem 1.5rem 2rem 1.5rem;
+     &__newproject {
+         display: inline-block;
+         position: relative;
+         &__text {
+             background: $colour-tertiaire;
+             text-align: center;
+             font-family: Georgia;
+             margin: 5px 20px 0px 0px;
+             font-size: 1rem;
+             color: rgb(82, 80, 80);
+             width: 30%;
+             height: 10%;
+             position: absolute;
+             z-index: 1;
+             right: 0%;
+             top: 2%;
+             ;
+         }
+     }
+     &__project {
+         width: 100%;
+         height: auto;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         margin-bottom: 2rem;
+         &:hover {
+             box-shadow: 0 5px 5px 0 #c3c3c3;
+         }
+         &__heading {
+             width: 100%;
+             height: 1rem;
+             padding-bottom: 0.8rem;
+             display: flex;
+             justify-content: flex-start;
+             font-size: 1.8rem;
+             font-weight: bold;
+         }
+         &__img {
+             width: 100%;
+             height: 12.5rem;
+             object-fit: cover;
+             @include borderRadiusTop($radiusDefault);
+         }
+     }
+     &__project__text {
+         width: 100%;
+         height: 5.5rem;
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         background-color: white;
+         @include borderRadiusBotton($radiusDefault);
+         padding-left: 1rem;
+         &__project__left {
+             width: 85%;
+             height: auto;
+             display: flex;
+             justify-content: center;
+             color: black;
+             flex-direction: column;
+             &__project__title {
+                 width: 100%;
+                 margin-bottom: 4px;
+                 font-size: 1.3rem;
+                 font-weight: bold;
+                 display: flex;
+                 justify-content: flex-start;
+             }
+             &__project__comment {
+                 width: 100%;
+                 height: auto;
+                 font-size: 1.2rem;
+                 display: flex;
+                 justify-content: flex-start;
+             }
+         }
+         &__project__rigth {
+             width: 15%;
+             height: auto;
+             margin: auto;
+             font-size: 1.8rem;
+             .far {
+                 position: relative; // display: none;
+                 opacity: 1;
+             }
+             .fas {
+                 opacity: 0;
+                 transition: all 400ms;
+                 position: absolute;
+                 bottom: 11%;
+                 left: 85.4%;
+                 -webkit-transition: all 400ms;
+                 -moz-transition: all 400ms;
+                 -ms-transition: all 400ms;
+                 -o-transition: all 400ms;
+             }
+             &:hover {
+                 .fas {
+                     opacity: 1;
+                 }
+             }
+         }
+     }
+ }

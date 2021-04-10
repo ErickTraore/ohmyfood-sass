@@ -139,17 +139,17 @@ a:link {
     position: relative; }
     .food__newproject__text {
       background: #99E2D0;
-      z-index: 1;
-      position: absolute;
       text-align: center;
       font-family: Georgia;
       margin: 5px 20px 0px 0px;
       font-size: 1rem;
-      right: 0%;
-      top: 2%;
       color: #525050;
       width: 30%;
-      height: 10%; }
+      height: 10%;
+      position: absolute;
+      z-index: 1;
+      right: 0%;
+      top: 2%; }
   .food__project {
     width: 100%;
     height: auto;
@@ -214,13 +214,21 @@ a:link {
       height: auto;
       margin: auto;
       font-size: 1.8rem; }
+      .food__project__text__project__rigth .far {
+        position: relative;
+        opacity: 1; }
       .food__project__text__project__rigth .fas {
-        display: none; }
-      .food__project__text__project__rigth:hover .far {
-        display: none; }
+        opacity: 0;
+        transition: all 400ms;
+        position: absolute;
+        bottom: 11%;
+        left: 85.4%;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -ms-transition: all 400ms;
+        -o-transition: all 400ms; }
       .food__project__text__project__rigth:hover .fas {
-        display: block;
-        color: #9356DC; }
+        opacity: 1; }
 
 .choise {
   width: 100%;
@@ -365,6 +373,17 @@ aside {
   justify-content: center;
   flex-wrap: wrap; }
 
+@keyframes menu1__in__comment__btn__zoneB {
+  0% {
+    transform: scaleX(0); }
+  17% {
+    transform: scaleX(0.18); }
+  24% {
+    transform: scaleX(0.4); }
+  46% {
+    transform: scaleX(0.81); }
+  100% {
+    transform: scaleX(1); } }
 .menu1 {
   width: 100%;
   height: 100%; }
@@ -456,7 +475,8 @@ aside {
           justify-content: space-between;
           flex-direction: column;
           cursor: pointer;
-          padding: 0.4rem; }
+          padding: 0.4rem;
+          position: relative; }
           .menu1__in__comment__btn__zoneA > p:first-child {
             display: flex;
             font-size: 1.1rem;
@@ -464,29 +484,44 @@ aside {
           .menu1__in__comment__btn__zoneA > p:last-child {
             display: flex;
             font-size: 0.85rem; }
+          .menu1__in__comment__btn__zoneA:hover + .menu1__in__comment__btn__zoneB {
+            opacity: 1;
+            transform: translate(0%, 0);
+            -webkit-transform: translate(0%, 0);
+            -moz-transform: translate(0%, 0);
+            -ms-transform: translate(0%, 0);
+            -o-transform: translate(0%, 0);
+            transform: scaleX(1);
+            animation: menu1__in__comment__btn__zoneB 1000ms;
+            -webkit-animation: menu1__in__comment__btn__zoneB 1000ms;
+            transform-origin: right; }
+            .menu1__in__comment__btn__zoneA:hover + .menu1__in__comment__btn__zoneB > .menu1__in__comment__btn__zoneB__zoneB1 {
+              opacity: 1; }
         .menu1__in__comment__btn__zoneB {
           width: 30%;
           height: auto;
           display: flex;
-          flex-direction: row-reverse; }
+          flex-direction: row;
+          transform: translate(50%, 0);
+          -webkit-transform: translate(50%, 0);
+          -moz-transform: translate(50%, 0);
+          -ms-transform: translate(50%, 0);
+          -o-transform: translate(50%, 0);
+          transition: transform 400ms ease-in-out;
+          -webkit-transition: transform 400ms ease-in-out;
+          -moz-transition: transform 400ms ease-in-out;
+          -ms-transition: transform 400ms ease-in-out;
+          -o-transition: transform 400ms ease-in-out; }
           .menu1__in__comment__btn__zoneB__zoneB2 {
             width: 50%;
             height: auto;
             display: flex;
             justify-content: flex-end;
+            transform: translate(0%);
             align-self: flex-end;
             cursor: pointer; }
             .menu1__in__comment__btn__zoneB__zoneB2 p {
-              margin: 0 0.5rem 0.3rem 0.5rem; }
-            .menu1__in__comment__btn__zoneB__zoneB2:hover {
-              transform: translate(-120%); }
-              .menu1__in__comment__btn__zoneB__zoneB2:hover:hover + .menu1__in__comment__btn__zoneB__zoneB1 {
-                transform: translate(101%);
-                opacity: 1;
-                -webkit-transform: translate(101%);
-                -moz-transform: translate(101%);
-                -ms-transform: translate(101%);
-                -o-transform: translate(101%); }
+              margin: 0 1.5rem 0.3rem 0.5rem; }
           .menu1__in__comment__btn__zoneB__zoneB1 {
             width: 50%;
             height: auto;
