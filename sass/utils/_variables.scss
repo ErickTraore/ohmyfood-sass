@@ -1,7 +1,9 @@
 $colour-primary:#9356DC;
 $colour-secondary:#FF79DA;
 $colour-tertiaire:#99E2D0;
-
 $radiusDefault: 30px;
 $radiusCircle: 50%;
 $defaultUnit: "px";
+$num-bars:4;
+$anim-dur:1000ms;
+$anim-delay: $anim-dur / $num-bars

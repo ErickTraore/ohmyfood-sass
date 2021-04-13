@@ -507,22 +507,6 @@ aside {
     transform: scaleX(0.81); }
   100% {
     transform: scaleX(1); } }
-@keyframes zoneA {
-  0%,
-            50% {
-    transform: translateY(5px);
-    -webkit-transform: translateY(5px);
-    -moz-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    -o-transform: translateY(5px);
-    opacity: 0; }
-  100% {
-    transform: scaleY(0px);
-    -webkit-transform: scaleY(0px);
-    -moz-transform: scaleY(0px);
-    -ms-transform: scaleY(0px);
-    -o-transform: scaleY(0px);
-    opacity: 1; } }
 .menu1 {
   width: 100%;
   height: 100%; }
@@ -583,7 +567,7 @@ aside {
       font-weight: bold;
       margin-left: 1rem;
       margin-bottom: 0.7rem;
-      border-bottom: 3px solid #216d21; }
+      border-bottom: 3px solid #99E2D0; }
     .menu1__in__comment {
       width: 100%;
       height: auto;
@@ -613,12 +597,16 @@ aside {
         animation: bars 1000ms both;
         -webkit-animation: bars 1000ms both;
         animation: bars 1000ms both;
+        -webkit-animation: bars 1000ms both;
+        animation: bars 1000ms both;
         -webkit-animation: bars 1000ms both; }
         .menu1__in__comment__btn--1 {
-          animation-delay: 333.3333333333ms; }
+          animation-delay: 250ms; }
         .menu1__in__comment__btn--2 {
-          animation-delay: 666.6666666667ms; }
+          animation-delay: 500ms; }
         .menu1__in__comment__btn--3 {
+          animation-delay: 750ms; }
+        .menu1__in__comment__btn--4 {
           animation-delay: 1000ms; }
         .menu1__in__comment__btn:hover > .menu1__in__comment__btn__zoneB {
           opacity: 1;
