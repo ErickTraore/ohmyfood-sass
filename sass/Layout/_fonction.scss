@@ -28,6 +28,15 @@
         font-size: 1.2rem;
         padding: 0 0rem;
         margin: 1rem 0rem;
+        //border: 3px solid red;
+        transform-origin: center;
+        transition: transform 4000ms;
+        -webkit-transition: transform 4000ms;
+        -moz-transition: transform 4000ms;
+        -ms-transition: transform 4000ms;
+        -o-transition: transform 4000ms;
+        animation: pageinit 1000ms;
+        -webkit-animation: pageinit 1000ms;
         &:hover {
             box-shadow: 0 5px 5px 0 #c3c3c3;
         }
