@@ -78,7 +78,7 @@
                  display: flex;
                  justify-content: space-between;
                  @include borderRadiusTop(30px);
-                 background: aliceblue;
+                 background: #f6f6f6;
                  position: absolute;
                  z-index: 1;
                  right: 0%;
@@ -108,7 +108,7 @@
              display: flex;
              justify-content: flex-start;
              flex-direction: column;
-             background: aliceblue;
+             background: #f6f6f6;
              padding-top: 1.5rem;
              &__menu {
                  width: 5%;
@@ -126,7 +126,7 @@
                  display: flex;
                  justify-content: flex-start;
                  flex-direction: column;
-                 background: aliceblue;
+                 background: #f6f6f6;
                  &__btn {
                      width: 90%;
                      height: auto;

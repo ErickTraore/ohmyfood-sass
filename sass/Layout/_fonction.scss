@@ -5,13 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(27, 216, 53);
-    @include tablet-only {
-        background-color: yellow;
-    }
-    @include desktop-only {
-        background-color: rgb(0, 26, 255);
-    }
+    background-color: white;
     &__filtre {
         width: 100%;
         padding-bottom: 1rem;
@@ -45,7 +39,6 @@
         -webkit-animation: pageinit 1000ms;
         @include tablet-only {
             width: 60%;
-            background-color: yellow;
         }
         &:hover {
             box-shadow: 0 5px 5px 0 #c3c3c3;
