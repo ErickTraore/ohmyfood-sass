@@ -20,7 +20,7 @@
          }
      }
      
-     @keyframes menu1__in__comment__btn__zoneB {
+     @keyframes validate {
          0% {
              transform: scaleX(0);
          }
@@ -59,7 +59,7 @@
                  display: flex;
                  justify-content: space-between;
                  @include borderRadiusTop(30px);
-                 background: #f6f6f6;
+                 background: $colour-quatro;
                  position: absolute;
                  z-index: 1;
                  right: 0%;
@@ -89,7 +89,7 @@
              display: flex;
              justify-content: flex-start;
              flex-direction: column;
-             background: #f6f6f6;
+             background: $colour-quatro;
              padding-top: 1.5rem;
              &__menu {
                  width: 5%;
@@ -107,14 +107,18 @@
                  display: flex;
                  justify-content: flex-start;
                  flex-direction: column;
-                 background: #f6f6f6;
+                 background: $colour-quatro;
+                 @include tablet-only {
+                     flex-direction: row;
+                     margin: 0px 2px;
+                 }
                  &__btn {
                      width: 90%;
                      height: auto;
                      display: flex;
                      justify-content: space-between;
                      flex-direction: row;
-                     margin: 5px auto;
+                     margin: 1rem 1rem 1rem 1rem;
                      padding: 0rem 0rem 0rem 0.5rem;
                      font-size: 1.1rem;
                      box-shadow: 1px 1px 12px grey;
@@ -130,14 +134,9 @@
                      }
                      &:hover>.menu1__in__comment__btn__zoneB {
                          opacity: 1;
-                         transform: translate(0%, 0);
-                         -webkit-transform: translate(0%, 0);
-                         -moz-transform: translate(0%, 0);
-                         -ms-transform: translate(0%, 0);
-                         -o-transform: translate(0%, 0);
                          transform: scaleX(1);
-                         animation: menu1__in__comment__btn__zoneB 1000ms cubic-bezier();
-                         -webkit-animation: menu1__in__comment__btn__zoneB 1000ms cubic-bezier();
+                         animation: validate 1000ms;
+                         -webkit-animation: validate 1000ms;
                          transform-origin: right;
                          &>.menu1__in__comment__btn__zoneB__zoneB1 {
                              opacity: 1;
@@ -197,6 +196,7 @@
                              color: white;
                              background: $colour-tertiaire;
                              opacity: 0;
+                             overflow: hidden;
                              align-items: center;
                              @include borderRadiusRigth(20px);
                          }
