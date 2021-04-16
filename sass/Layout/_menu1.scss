@@ -140,6 +140,13 @@
                          transform-origin: right;
                          &>.menu1__in__comment__btn__zoneB__zoneB1 {
                              opacity: 1;
+                             &>.menu1__in__comment__btn__zoneB__zoneB1--fas {
+                                 transform: rotate(2turn);
+                                 -webkit-transform: rotate(2turn);
+                                 -moz-transform: rotate(2turn);
+                                 -ms-transform: rotate(2turn);
+                                 -o-transform: rotate(2turn);
+                             }
                          }
                      }
                      &__zoneA {
@@ -199,6 +206,10 @@
                              overflow: hidden;
                              align-items: center;
                              @include borderRadiusRigth(20px);
+                             &--fas {
+                                 transform: rotate(-360deg);
+                                 transition: transform 500ms ease-in-out;
+                             }
                          }
                      }
                  }
