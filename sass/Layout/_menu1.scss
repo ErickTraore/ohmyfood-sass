@@ -111,6 +111,7 @@
                  @include tablet-only {
                      flex-direction: row;
                      margin: 0px 2px;
+                     position: relative;
                  }
                  &__btn {
                      width: 90%;
@@ -157,15 +158,19 @@
                          flex-direction: column;
                          cursor: pointer;
                          padding: 0.4rem;
-                         ;
                          &>p:first-child {
-                             display: flex;
                              font-size: .8rem;
                              font-weight: bold;
+                             overflow: hidden;
+                             text-overflow: ellipsis;
+                             white-space: nowrap;
                          }
                          &>p:last-child {
-                             display: flex;
                              font-size: 0.7rem;
+                             overflow: hidden;
+                             text-overflow: ellipsis;
+                             font-weight: bold;
+                             white-space: nowrap;
                          }
                      }
                      &__zoneB {

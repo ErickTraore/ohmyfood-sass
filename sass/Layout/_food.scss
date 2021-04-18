@@ -86,7 +86,6 @@
                 text-align: center;
                 font-family: Georgia;
                 margin: 2% 5% 0px 0px;
-                // font-size: 25;
                 color: rgb(82, 80, 80);
                 width: 30%;
                 height: 10%;
@@ -180,23 +179,28 @@
                         margin: auto;
                         font-size: 1.8rem;
                         .far {
-                            position: relative; // display: none;
+                            position: relative;
+                            // display: none;
                             opacity: 1;
                         }
                         .fas {
                             opacity: 0;
                             transition: all 400ms;
-                            position: absolute;
-                            bottom: 7.2%;
-                            left: 85.5%;
                             -webkit-transition: all 400ms;
                             -moz-transition: all 400ms;
                             -ms-transition: all 400ms;
                             -o-transition: all 400ms;
+                            position: absolute;
+                            bottom: 7.2%;
+                            left: 85.5%;
                         }
                         &:hover {
                             .fas {
+                                color: $colour-primary;
                                 opacity: 1;
+                            }
+                            .far {
+                                display: none;
                             }
                         }
                     }
