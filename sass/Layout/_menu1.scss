@@ -1,233 +1,257 @@
-     @keyframes bars {
-         0% {
-             transform: translateY(15%);
-             -webkit-transform: translateY(15%);
-             -moz-transform: translateY(15%);
-             -ms-transform: translateY(15%);
-             -o-transform: translateY(15%);
-             opacity: 0;
-         }
-         17% {
-             opacity: 0.2;
-         }
-         100% {
-             transform: translateY(0%);
-             -webkit-transform: translateY(0%);
-             -moz-transform: translateY(0%);
-             -ms-transform: translateY(0%);
-             -o-transform: translateY(0%);
-             opacity: 1;
-         }
-     }
-     
-     @keyframes validate {
-         0% {
-             transform: scaleX(0);
-         }
-         17% {
-             transform: scaleX(.18);
-         }
-         24% {
-             transform: scaleX(.4);
-         }
-         46% {
-             transform: scaleX(.81);
-         }
-         100% {
-             transform: scaleX(1);
-         }
-     }
-     
-     .menu1 {
-         width: 100%;
-         height: 100%;
-         &__preview {
-             width: auto;
-             height: 100%;
-             display: flex;
-             flex-direction: column;
-             position: relative;
-             &__img {
-                 width: auto;
-                 height: 21rem;
-                 z-index: -1;
-                 object-fit: cover;
-             }
-             &__title {
-                 width: 100%;
-                 height: auto;
-                 display: flex;
-                 justify-content: space-between;
-                 @include borderRadiusTop(30px);
-                 background: $colour-quatro;
-                 position: absolute;
-                 z-index: 1;
-                 right: 0%;
-                 bottom: 0%;
-                 padding: 6% 0% 0% 0%;
-                 &__text {
-                     height: auto;
-                     width: 100%;
-                     height: auto;
-                     font-size: x-large;
-                     font-stretch: normal;
-                     font-family: 'shrikhandregular';
-                     padding: 0% 0% 0% 2%;
-                     font-weight: bold;
-                 }
-                 &__far {
-                     height: auto;
-                     align-self: center;
-                     font-size: 2rem;
-                     padding: 0% 6% 0% 0%;
-                 }
-             }
-         }
-         &__in {
-             width: 100%;
-             height: auto;
-             display: flex;
-             justify-content: flex-start;
-             flex-direction: column;
-             background: $colour-quatro;
-             padding-top: 1.5rem;
-             &__menu {
-                 width: 5%;
-                 height: auto;
-                 justify-content: space-around;
-                 font-size: 1rem;
-                 font-weight: bold;
-                 margin-left: 1rem;
-                 margin-bottom: 0.7rem;
-                 border-bottom: 3px solid $colour-tertiaire;
-             }
-             &__comment {
-                 width: 100%;
-                 height: auto;
-                 display: flex;
-                 justify-content: flex-start;
-                 flex-direction: column;
-                 background: $colour-quatro;
-                 @include tablet-only {
-                     flex-direction: row;
-                     margin: 0px 2px;
-                     position: relative;
-                 }
-                 &__btn {
-                     width: 90%;
-                     height: auto;
-                     display: flex;
-                     justify-content: space-between;
-                     flex-direction: row;
-                     margin: 1rem 1rem 1rem 1rem;
-                     padding: 0rem 0rem 0rem 0.5rem;
-                     font-size: 1.1rem;
-                     box-shadow: 1px 1px 12px grey;
-                     @include borderRadius(20px);
-                     background: white;
-                     opacity: 0;
-                     @for $i from 1 through $num-bars {
-                         animation: bars $anim-dur both;
-                         -webkit-animation: bars $anim-dur both;
-                         &--#{$i} {
-                             animation-delay: $anim-delay * $i;
-                         }
-                     }
-                     &:hover>.menu1__in__comment__btn__zoneB {
-                         opacity: 1;
-                         transform: scaleX(1);
-                         animation: validate 1000ms;
-                         -webkit-animation: validate 1000ms;
-                         transform-origin: right;
-                         &>.menu1__in__comment__btn__zoneB__zoneB1 {
-                             opacity: 1;
-                             &>.menu1__in__comment__btn__zoneB__zoneB1--fas {
-                                 transform: rotate(2turn);
-                                 -webkit-transform: rotate(2turn);
-                                 -moz-transform: rotate(2turn);
-                                 -ms-transform: rotate(2turn);
-                                 -o-transform: rotate(2turn);
+                             @keyframes bars {
+                                 0% {
+                                     transform: translateY(15%);
+                                     -webkit-transform: translateY(15%);
+                                     -moz-transform: translateY(15%);
+                                     -ms-transform: translateY(15%);
+                                     -o-transform: translateY(15%);
+                                     opacity: 0;
+                                 }
+                                 17% {
+                                     opacity: 0.2;
+                                 }
+                                 100% {
+                                     transform: translateY(0%);
+                                     -webkit-transform: translateY(0%);
+                                     -moz-transform: translateY(0%);
+                                     -ms-transform: translateY(0%);
+                                     -o-transform: translateY(0%);
+                                     opacity: 1;
+                                 }
                              }
-                         }
-                     }
-                     &__zoneA {
-                         width: 70%;
-                         height: auto;
-                         display: flex;
-                         justify-content: space-between;
-                         flex-direction: column;
-                         cursor: pointer;
-                         padding: 0.4rem;
-                         &>p:first-child {
-                             font-size: .8rem;
-                             font-weight: bold;
-                             overflow: hidden;
-                             text-overflow: ellipsis;
-                             white-space: nowrap;
-                         }
-                         &>p:last-child {
-                             font-size: 0.7rem;
-                             overflow: hidden;
-                             text-overflow: ellipsis;
-                             font-weight: bold;
-                             white-space: nowrap;
-                         }
-                     }
-                     &__zoneB {
-                         width: 30%;
-                         height: auto;
-                         display: flex;
-                         flex-direction: row;
-                         transform: translate(50%, 0);
-                         -webkit-transform: translate(50%, 0);
-                         -moz-transform: translate(50%, 0);
-                         -ms-transform: translate(50%, 0);
-                         -o-transform: translate(50%, 0);
-                         transition: transform 400ms ease-in-out;
-                         -webkit-transition: transform 400ms ease-in-out;
-                         -moz-transition: transform 400ms ease-in-out;
-                         -ms-transition: transform 400ms ease-in-out;
-                         -o-transition: transform 400ms ease-in-out;
-                         &__zoneB2 {
-                             width: 50%;
-                             height: auto;
-                             display: flex;
-                             justify-content: flex-end;
-                             transform: translate(0%);
-                             align-self: flex-end;
-                             & p {
-                                 margin: 0 1.5rem 0.3rem 0.5rem;
+                             
+                             @keyframes validate {
+                                 0% {
+                                     transform: scaleX(0);
+                                 }
+                                 17% {
+                                     transform: scaleX(.18);
+                                 }
+                                 24% {
+                                     transform: scaleX(.4);
+                                 }
+                                 46% {
+                                     transform: scaleX(.81);
+                                 }
+                                 100% {
+                                     transform: scaleX(1);
+                                 }
                              }
-                             cursor: pointer;
-                         }
-                         &__zoneB1 {
-                             width: 50%;
-                             height: auto; //          
-                             display: flex;
-                             justify-content: center;
-                             color: white;
-                             background: $colour-tertiaire;
-                             opacity: 0;
-                             overflow: hidden;
-                             align-items: center;
-                             @include borderRadiusRigth(20px);
-                             &--fas {
-                                 transform: rotate(-360deg);
-                                 transition: transform 500ms ease-in-out;
+                             
+                             .menu1 {
+                                 width: 100%;
+                                 height: 100%;
+                                 &__preview {
+                                     width: auto;
+                                     height: 100%;
+                                     display: flex;
+                                     flex-direction: column;
+                                     position: relative;
+                                     &__img {
+                                         width: auto;
+                                         height: 21rem;
+                                         z-index: -1;
+                                         object-fit: cover;
+                                     }
+                                     &__title {
+                                         width: 100%;
+                                         height: auto;
+                                         display: flex;
+                                         justify-content: space-between;
+                                         @include borderRadiusTop(30px);
+                                         background: $colour-quatro;
+                                         position: absolute;
+                                         z-index: 1;
+                                         right: 0%;
+                                         bottom: 0%;
+                                         padding: 6% 0% 0% 0%;
+                                         &__text {
+                                             height: auto;
+                                             width: 100%;
+                                             height: auto;
+                                             font-size: x-large;
+                                             font-stretch: normal;
+                                             font-family: 'shrikhandregular';
+                                             padding: 0% 0% 0% 2%;
+                                             font-weight: bold;
+                                         }
+                                         &__far {
+                                             height: auto;
+                                             align-self: center;
+                                             font-size: 2rem;
+                                             padding: 0% 6% 0% 0%;
+                                         }
+                                     }
+                                 }
+                                 &__in {
+                                     width: 100%;
+                                     height: auto;
+                                     display: flex;
+                                     justify-content: flex-start;
+                                     flex-direction: column;
+                                     background: $colour-quatro;
+                                     padding-top: 1.5rem;
+                                     &__menu {
+                                         width: 5%;
+                                         height: auto;
+                                         justify-content: space-around;
+                                         font-size: 1rem;
+                                         font-weight: bold;
+                                         margin-left: 1rem;
+                                         margin-bottom: 0.7rem;
+                                         border-bottom: 3px solid $colour-tertiaire;
+                                     }
+                                     &__comment {
+                                         width: 100%;
+                                         height: auto;
+                                         display: flex;
+                                         justify-content: flex-start;
+                                         flex-direction: column;
+                                         background: $colour-quatro;
+                                         @include tablet-only {
+                                             width: 100%;
+                                             flex-direction: row;
+                                             flex-wrap: wrap;
+                                             margin: 0px 2px;
+                                             position: relative;
+                                             //  background-color: aqua;
+                                         }
+                                         @include laptop-only {
+                                             flex-direction: row;
+                                             margin: 0px 2px;
+                                             position: relative;
+                                             //  background-color: rgb(30, 255, 0);
+                                         }
+                                         @include desktop-only {
+                                             flex-direction: row;
+                                             margin: auto;
+                                             justify-content: center;
+                                             //  background-color: rgba(255, 230, 0, 0.856);
+                                             position: relative;
+                                         }
+                                         &__btn {
+                                             width: 90%;
+                                             height: auto;
+                                             display: flex;
+                                             justify-content: space-between;
+                                             flex-direction: row;
+                                             margin: 1rem 1rem 1rem 1rem;
+                                             padding: 0rem 0rem 0rem 0.5rem;
+                                             font-size: 1.1rem;
+                                             box-shadow: 1px 1px 12px grey;
+                                             @include borderRadius(20px);
+                                             background: white;
+                                             opacity: 0;
+                                             @include tablet-only {
+                                                 width: 43.5%;
+                                             }
+                                             @include desktop-only {
+                                                 width: 46%;
+                                             }
+                                             @for $i from 1 through $num-bars {
+                                                 animation: bars $anim-dur both;
+                                                 -webkit-animation: bars $anim-dur both;
+                                                 &--#{$i} {
+                                                     animation-delay: $anim-delay * $i;
+                                                 }
+                                             }
+                                             &:hover>.menu1__in__comment__btn__zoneB {
+                                                 opacity: 1;
+                                                 transform: scaleX(1);
+                                                 animation: validate 1000ms;
+                                                 -webkit-animation: validate 1000ms;
+                                                 transform-origin: right;
+                                                 &>.menu1__in__comment__btn__zoneB__zoneB1 {
+                                                     opacity: 1;
+                                                     &>.menu1__in__comment__btn__zoneB__zoneB1--fas {
+                                                         transform: rotate(2turn);
+                                                         -webkit-transform: rotate(2turn);
+                                                         -moz-transform: rotate(2turn);
+                                                         -ms-transform: rotate(2turn);
+                                                         -o-transform: rotate(2turn);
+                                                     }
+                                                 }
+                                             }
+                                             &__zoneA {
+                                                 width: 70%;
+                                                 height: auto;
+                                                 display: flex;
+                                                 justify-content: space-between;
+                                                 flex-direction: column;
+                                                 cursor: pointer;
+                                                 padding: 0.4rem;
+                                                 &>p:first-child {
+                                                     font-size: .8rem;
+                                                     font-weight: bold;
+                                                     overflow: hidden;
+                                                     text-overflow: ellipsis;
+                                                     white-space: nowrap;
+                                                 }
+                                                 &>p:last-child {
+                                                     font-size: 0.7rem;
+                                                     font-weight: bold;
+                                                     overflow: hidden;
+                                                     text-overflow: ellipsis;
+                                                     white-space: nowrap;
+                                                 }
+                                             }
+                                             &__zoneB {
+                                                 width: 30%;
+                                                 height: auto;
+                                                 display: flex;
+                                                 flex-direction: row;
+                                                 transform: translate(50%, 0);
+                                                 -webkit-transform: translate(50%, 0);
+                                                 -moz-transform: translate(50%, 0);
+                                                 -ms-transform: translate(50%, 0);
+                                                 -o-transform: translate(50%, 0);
+                                                 transition: transform 400ms ease-in-out;
+                                                 -webkit-transition: transform 400ms ease-in-out;
+                                                 -moz-transition: transform 400ms ease-in-out;
+                                                 -ms-transition: transform 400ms ease-in-out;
+                                                 -o-transition: transform 400ms ease-in-out;
+                                                 &__zoneB2 {
+                                                     width: 50%;
+                                                     height: 100%;
+                                                     display: flex;
+                                                     justify-content: flex-end;
+                                                     transform: translate(0%);
+                                                     align-self: flex-end;
+                                                     & p {
+                                                         font-size: 0.8rem;
+                                                         padding: 21px 0px 0px 0px;
+                                                     }
+                                                     cursor: pointer;
+                                                 }
+                                                 &__zoneB1 {
+                                                     width: 50%;
+                                                     height: auto; //          
+                                                     display: flex;
+                                                     justify-content: center;
+                                                     color: white;
+                                                     margin-left: 1rem;
+                                                     background: $colour-tertiaire;
+                                                     opacity: 0;
+                                                     overflow: hidden;
+                                                     align-items: center;
+                                                     @include borderRadiusRigth(20px);
+                                                     &--fas {
+                                                         transform: rotate(-360deg);
+                                                         transition: transform 500ms ease-in-out;
+                                                     }
+                                                 }
+                                             }
+                                         }
+                                     }
+                                 }
+                                 &__commandez {
+                                     width: 30%;
+                                     display: flex;
+                                     justify-content: center;
+                                     align-self: center;
+                                     margin-top: 3rem;
+                                     &__btn {
+                                         @include buttonAuto();
+                                     }
+                                 }
                              }
-                         }
-                     }
-                 }
-             }
-         }
-         &__commandez {
-             width: 30%;
-             display: flex;
-             justify-content: center;
-             align-self: center;
-             margin-top: 3rem;
-             &__btn {
-                 @include buttonAuto();
-             }
-         }
-     }
