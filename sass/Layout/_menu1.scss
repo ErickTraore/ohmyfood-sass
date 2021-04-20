@@ -107,6 +107,7 @@
                                          display: flex;
                                          justify-content: flex-start;
                                          flex-direction: column;
+                                         margin: auto;
                                          background: $colour-quatro;
                                          @include tablet-only {
                                              width: 100%;
@@ -114,19 +115,20 @@
                                              flex-wrap: wrap;
                                              margin: 0px 2px;
                                              position: relative;
-                                             //  background-color: aqua;
+                                             background-color: aqua;
                                          }
                                          @include laptop-only {
                                              flex-direction: row;
-                                             margin: 0px 2px;
+                                             margin: auto;
+                                             justify-content: center;
                                              position: relative;
-                                             //  background-color: rgb(30, 255, 0);
+                                             background-color: rgb(30, 255, 0);
                                          }
                                          @include desktop-only {
                                              flex-direction: row;
                                              margin: auto;
                                              justify-content: center;
-                                             //  background-color: rgba(255, 230, 0, 0.856);
+                                             background-color: rgba(255, 230, 0, 0.856);
                                              position: relative;
                                          }
                                          &__btn {
@@ -135,9 +137,9 @@
                                              display: flex;
                                              justify-content: space-between;
                                              flex-direction: row;
-                                             margin: 1rem 1rem 1rem 1rem;
+                                             margin: 1rem 0.5rem 1rem 0.5rem;
                                              padding: 0rem 0rem 0rem 0.5rem;
-                                             font-size: 1.1rem;
+                                             //  font-size: 1.1rem;
                                              box-shadow: 1px 1px 12px grey;
                                              @include borderRadius(20px);
                                              background: white;
@@ -146,7 +148,7 @@
                                                  width: 43.5%;
                                              }
                                              @include desktop-only {
-                                                 width: 46%;
+                                                 width: 30%;
                                              }
                                              @for $i from 1 through $num-bars {
                                                  animation: bars $anim-dur both;
@@ -173,45 +175,48 @@
                                                  }
                                              }
                                              &__zoneA {
-                                                 width: 70%;
+                                                 width: 76%;
                                                  height: auto;
                                                  display: flex;
+                                                 line-height: 1.5rem;
                                                  justify-content: space-between;
                                                  flex-direction: column;
                                                  cursor: pointer;
-                                                 padding: 0.4rem;
+                                                 padding: 0.5rem;
+                                                 font-stretch: 10px;
                                                  &>p:first-child {
-                                                     font-size: .8rem;
-                                                     font-weight: bold;
+                                                     width: auto;
+                                                     font-size: 1rem;
+                                                     font-weight: 500;
                                                      overflow: hidden;
                                                      text-overflow: ellipsis;
                                                      white-space: nowrap;
                                                  }
                                                  &>p:last-child {
-                                                     font-size: 0.7rem;
-                                                     font-weight: bold;
+                                                     font-size: 0.8rem;
+                                                     font-weight: 100;
                                                      overflow: hidden;
                                                      text-overflow: ellipsis;
                                                      white-space: nowrap;
                                                  }
                                              }
                                              &__zoneB {
-                                                 width: 30%;
+                                                 width: 24%;
                                                  height: auto;
                                                  display: flex;
                                                  flex-direction: row;
-                                                 transform: translate(50%, 0);
-                                                 -webkit-transform: translate(50%, 0);
-                                                 -moz-transform: translate(50%, 0);
-                                                 -ms-transform: translate(50%, 0);
-                                                 -o-transform: translate(50%, 0);
+                                                 transform: translate(60%, 0);
+                                                 -webkit-transform: translate(60%, 0);
+                                                 -moz-transform: translate(60%, 0);
+                                                 -ms-transform: translate(60%, 0);
+                                                 -o-transform: translate(60%, 0);
                                                  transition: transform 400ms ease-in-out;
                                                  -webkit-transition: transform 400ms ease-in-out;
                                                  -moz-transition: transform 400ms ease-in-out;
                                                  -ms-transition: transform 400ms ease-in-out;
                                                  -o-transition: transform 400ms ease-in-out;
                                                  &__zoneB2 {
-                                                     width: 50%;
+                                                     width: 20%;
                                                      height: 100%;
                                                      display: flex;
                                                      justify-content: flex-end;
@@ -219,21 +224,22 @@
                                                      align-self: flex-end;
                                                      & p {
                                                          font-size: 0.8rem;
-                                                         padding: 21px 0px 0px 0px;
+                                                         padding: 2rem 0.5rem 0 0;
                                                      }
                                                      cursor: pointer;
                                                  }
                                                  &__zoneB1 {
-                                                     width: 50%;
+                                                     width: 80%;
                                                      height: auto; //          
                                                      display: flex;
                                                      justify-content: center;
                                                      color: white;
-                                                     margin-left: 1rem;
+                                                     margin-left: 0.5rem;
                                                      background: $colour-tertiaire;
                                                      opacity: 0;
                                                      overflow: hidden;
                                                      align-items: center;
+                                                     font-size: larger;
                                                      @include borderRadiusRigth(20px);
                                                      &--fas {
                                                          transform: rotate(-360deg);
