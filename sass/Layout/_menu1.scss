@@ -184,7 +184,8 @@
                                                  cursor: pointer;
                                                  padding: 0.5rem;
                                                  font-stretch: 10px;
-                                                 &>p:first-child {
+                                                 background-color: red;
+                                                 & h3 {
                                                      width: auto;
                                                      font-size: 1rem;
                                                      font-weight: 500;
@@ -192,13 +193,28 @@
                                                      text-overflow: ellipsis;
                                                      white-space: nowrap;
                                                  }
-                                                 &>p:last-child {
+                                                 & h4 {
                                                      font-size: 0.8rem;
                                                      font-weight: 100;
                                                      overflow: hidden;
                                                      text-overflow: ellipsis;
                                                      white-space: nowrap;
                                                  }
+                                                 //  &>p:first-child {
+                                                 //      width: auto;
+                                                 //      font-size: 1rem;
+                                                 //      font-weight: 500;
+                                                 //      overflow: hidden;
+                                                 //      text-overflow: ellipsis;
+                                                 //      white-space: nowrap;
+                                                 //  }
+                                                 //  &>p:last-child {
+                                                 //      font-size: 0.8rem;
+                                                 //      font-weight: 100;
+                                                 //      overflow: hidden;
+                                                 //      text-overflow: ellipsis;
+                                                 //      white-space: nowrap;
+                                                 //  }
                                              }
                                              &__zoneB {
                                                  width: 24%;
@@ -221,10 +237,11 @@
                                                      display: flex;
                                                      justify-content: flex-end;
                                                      transform: translate(0%);
-                                                     align-self: flex-end;
+                                                     background-color: yellow;
                                                      & p {
                                                          font-size: 0.8rem;
                                                          padding: 2rem 0.5rem 0 0;
+                                                         //  background-color: blue;
                                                      }
                                                      cursor: pointer;
                                                  }
